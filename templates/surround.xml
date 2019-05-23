@@ -1,3 +1,7 @@
 <templateSet group="surround">
-  <template name="A" value="try{&#10;}&#10;catch{&#10;}" description="try{}catch" toReformat="false" toShortenFQNames="true" />
+  <template name="A" value="try{&#10;}&#10;catch(Exception e){&#10;}" description="try{}catch" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
 </templateSet>
